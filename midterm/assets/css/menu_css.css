@@ -1,0 +1,202 @@
+
+header {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    background: #f1efe7;
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#image-banner {
+    background-image: url('../img/combinedfirst.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 75px;
+    
+}
+#other-posts {
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.image-card, .image-card-color-overlay {
+    width: 380px;
+    height: 200px;
+}
+
+.image-card {
+    float: left;
+    overflow: hidden;
+    margin-right: 40px;
+    /* PROBLEM 3: Give .image-card the appropriate position type */
+    position: relative;
+
+}
+
+.image-card:last-child {
+    margin-right: 0;
+}
+
+.image-card img {
+    width: 100%;
+}
+
+.image-card-color-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: 0.3s;
+    background-color: navy;
+}
+
+.image-card:hover .image-card-color-overlay {
+    /* PROBLEM 5: Pick an opacity for the blue hover effect */
+    opacity: 0.7;
+}
+
+.image-card-text {
+    position: absolute;
+    top: 160px;
+    left: 20px;
+    color: white;
+}
+
+.navbar-item {
+    background-image: linear-gradient(
+      to right,
+      #459c71,
+      #459c71 50%,
+      #0C3128 50%
+    );
+
+    float: right;
+	line-height: 60px;
+    margin-left: 20px;
+    
+    font-family: 'Italiana', serif;
+    font-size: 26px;
+    font-weight: bold;
+
+    background-size: 200% 100%;
+    background-position: -100%;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+  
+.navbar-item:before{
+    content: '';
+    background: #459c71;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+  
+.navbar-item:hover {
+    cursor: pointer;
+    background-position: 0;
+}
+  
+.navbar-item:hover::before{
+    width: 100%;
+}
+  
+
+#profile-pic {
+    float: left;
+    margin-top: 6px;
+}
+
+body {
+    background: #CDCDEF
+}
+
+h1 {
+    font-family: 'Italiana', serif;
+    color: #0C3128;
+    font-size: 42px;
+    width: 170px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.menu-list {
+    font-family: 'Dosis', serif;
+    color: #0C3128;
+    font-size: 22px;
+    line-height: 32px;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    border-style: double;
+    border-color: #0C3128;
+    padding: 12px;
+}
+
+p {
+    font-family: 'Dosis', serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #0C3128;
+    padding: 8px;
+}
+
+h2 {
+    font-family: 'Italiana', serif;
+    color: #0C3128;
+    font-size: 32px;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: bold;
+}
+
+h3 {
+    color: #0C3128;
+    font-size: 18px;
+    width: 390px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h4 {
+    margin-top:20px;
+    color: #0C3128;
+    font-size: 13px;
+    width: 260px;
+    margin-right: auto;
+    margin-left: auto;
+}
+h5 {
+    color: #0C3128;
+    font-size: 12px;
+    width: 260px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+dt {
+    font-weight: bolder;
+}
+
+dd {
+    color: #459c71;
+}

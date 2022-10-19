@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    background: #f1efe7;
+    /* PROBLEM 1: Make the header stick to the top as you scroll */
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.content {
+    width: 1400px;
+    /* PROBLEM 2: Align the page content to the center of the screen */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#image-banner {
+    background-image: url('../img/combinedfirst.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 711px;
+    
+}
+
+#other-posts {
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.image-card, .image-card-color-overlay {
+    width: 380px;
+    height: 200px;
+}
+
+.image-card {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    margin-right: 40px;
+    /* PROBLEM 3: Give .image-card the appropriate position type */
+    position: relative;
+
+}
+
+.image-card:last-child {
+    margin-right: 0;
+}
+
+.image-card img {
+    width: 100%;
+}
+
+.image-card-color-overlay {
+    position: absolute;
+    /* PROBLEM 4: Move the color overlay to cover the image properly */
+    top: 0px;
+    left: 0px;
+    /* PROBLEM 5: What should the opacity be when there is no hover? */
+    opacity: 0;
+    transition: 0.3s;
+    background-color: navy;
+}
+
+.image-card:hover .image-card-color-overlay {
+    /* PROBLEM 5: Pick an opacity for the blue hover effect */
+    opacity: 0.7;
+}
+
+.image-card-text {
+    /* PROBLEM 6: Similar to .image-card-cover-overlay, position the card text */
+    position: absolute;
+    top: 160px;
+    left: 20px;
+    color: white;
+}
+
+
+
+/*
+.navbar-item {
+	float: right;
+	line-height: 60px;
+	opacity: 0.5;
+}
+*/
+
+.navbar-item {
+    background-image: linear-gradient(
+      to right,
+      #459c71,
+      #459c71 50%,
+      #0C3128 50%
+    );
+
+    float: right;
+	line-height: 60px;
+    margin-left: 20px;
+    
+    font-family: 'Italiana', serif;
+    font-size: 26px;
+    font-weight: bold;
+
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+  
+.navbar-item:before{
+    content: '';
+    background: #459c71;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+  
+.navbar-item:hover {
+    cursor: pointer;
+    background-position: 0;
+}
+  
+.navbar-item:hover::before{
+    width: 100%;
+}
+  
+
+#profile-pic {
+    float: left;
+    margin-top: 6px;
+}
+/*
+.navbar-item {
+    margin-left: 20px;
+    margin-top: 8px;
+    font-family: 'Italiana', serif;
+    font-size: 26px;
+    color: #175C4C;
+    font-weight: bold;
+}
+
+.navbar-item:hover {
+    opacity: 1;
+    transition: 0.2s;
+}
+*/
+
+body {
+    background: #CDCDEF
+}
+
+/*#background {
+    width: 80%;
+    min-height: 40em;
+    margin: auto;
+    border: solid 2px #000;
+    background-image: url("assets/img/testerbackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}*/
+
+h1 {
+    font-family: 'Italiana', serif;
+    color: #0C3128;
+    font-size: 22px;
+    width: 130px;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 1px solid #0C3128;
+    padding-bottom: 3px;
+}
+
+.contact {
+    font-family: 'Italiana', serif;
+    display: flex;
+    font-size: 26px;
+    font-weight: bolder;
+    color: #0C3128;
+    margin-right: auto;
+    margin-left: auto;
+    float:right;
+    width: 1400px;
+	line-height: 60px;
+}
+
+#phone-icon{
+    margin-left: auto;
+}
+
+#clock-icon{
+    margin-left: 30px;
+}
+
+#phone-num{
+    margin-left: 30px;
+}
+
+#hours{
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+h3 {
+    font-family: 'Italiana', serif;
+    color: #0C3128;
+    font-size: 22px;
+    width: 212px;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 1px solid #0C3128;
+    padding-bottom: 3px
+}
+
+.about-block {
+    border-style: double;
+    border-color: #0C3128;
+    /*
+    border-top:#0C3128;
+    border-bottom:#0C3128;
+    border-left: #0C3128;
+    border-right: #0C3128; */
+}
+
+p {
+    font-family: 'Dosis', serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #0C3128;
+    padding: 8px;
+}
+
+h4 {
+    margin-top:20px;
+    color: #0C3128;
+    font-size: 13px;
+    width: 260px;
+    margin-right: auto;
+    margin-left: auto;
+}
+h5 {
+    color: #0C3128;
+    font-size: 12px;
+    width: 260px;
+    margin-right: auto;
+    margin-left: auto;
+}
