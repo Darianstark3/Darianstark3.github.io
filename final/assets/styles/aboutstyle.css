@@ -1,0 +1,103 @@
+html {
+  box-sizing: border-box;
+
+  }
+  
+*, *:before, *:after {
+  box-sizing: inherit;
+
+  }
+  
+h2 {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-shadow: 1px 1px rgb(103, 103, 103);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: rgb(172, 200, 195);
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 22px;
+  padding: 0 0px;
+}
+
+
+#logo {
+  text-align: center;
+  position: absolute;
+  top: -13px;
+  left: 30px;
+}
+
+.container {
+  padding: 0 16px;
+}
+.occupation {
+  color: rgb(67, 65, 65);
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#company_name {
+  padding: 18px;
+  font-size: 18px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  border-radius: 2px;
+  text-align: center;
+  font-weight: 700;
+  color: #4a4a4a;
+  position: absolute;
+  color: #fff;
+  top: 86px;
+  left: 60px;
+}
+  
+.about_header {
+  background-color: #232329;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-top: 8px;
+  padding-bottom: 22px;
+  text-align: center;
+} 
+
+.button {
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  outline: 0;
+  color:beige;
+  background-color: #000;
+  width: 100%;
+  display: inline-block;
+  padding: 8px;
+}
+  
+.button:hover {
+  background-color: rgb(172, 200, 195);
+  color: black;
+  font-weight: bold;
+}
+
+.contact_card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 16px;
+  background-color:beige;
+}

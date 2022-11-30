@@ -1,6 +1,64 @@
-<!DOCTYPE html>
 <html>
-    <body>
-        FINAL
-    </body>
+<head>
+    <title>Hungry Dad</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typeit/6.5.1/typeit.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="assets/scripts/script.js"></script>
+</head>
+<body>
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+    <div id="center">
+        <div id="title"></div>
+        <div id="question"></div>
+    </div>
+    <script src="<https://unpkg.com/typeit@8.7.0/dist/index.umd.js>"></script>
+    <div class="wrapper">
+        <div class="center-div">
+            <script type="text/javascript">
+                new TypeIt("#title", {
+                    strings: ["Hi Hungry, I'm Dad!"],
+                    speed: 50,
+                    waitUntilVisible: true
+                }).go();
+            </script>
+            <p>
+                <span id="eatText">
+                What kind of food do you wanna eat?
+                </span>
+            </p>
+            <div id="buttons">
+                <div class="question" id = 'answer1' data-aos="fade-up">sweet</div></a>
+                <div class="question" id = 'answer2' data-aos="fade-up">savory</div></a>
+            </div>
+            <div id="presenting"><h1>Brought To You By:</h1></div>
+            <div id="logo"><a href="about.html">
+                <img src="assets/images/food_blob.png" style ="width: 200px"> </a>
+            </div>
+            <div id="company_name"><h2>Hungry Dad™</h2></div>
+            
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <script>
+                    AOS.init({
+                        offset: 400,
+                        duration: 900
+                    });
+                </script>
+</body>
 </html>
